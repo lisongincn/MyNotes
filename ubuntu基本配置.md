@@ -1,4 +1,10 @@
 # ubuntu基本配置
+# 仓库地址 设置为 中国仓库 (中科大仓库)
+
+```console
+sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list && apt update && apt upgrade
+```
+
 # 设置中文
 
 ubuntu中有一个语言管理程序,可以通过图形化界面快速设置语言
