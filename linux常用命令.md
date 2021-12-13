@@ -44,7 +44,7 @@ tar czvf my.tar dir1
 tar czvf my.tar dir1 dir2
 ```
 
-#### 解包至当前目录
+### 解包至当前目录
 
 ```console
 tar xzvf my.tar
