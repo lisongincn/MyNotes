@@ -84,7 +84,7 @@ ubuntu中有一个语言管理程序,可以通过图形化界面快速设置语�
 
         ```config
         PermitRootLogin yes
-        UsePAM yes
+        UsePAM no
         ```
 
     1. 保存并退出
