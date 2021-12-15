@@ -3,7 +3,7 @@
 ## 开启代理
 
 ```console
-export proxy="http://192.168.1.5:1080" && export http_proxy=$proxy && export https_proxy=$proxy && export no_proxy="localhost, 127.0.0.1, ::1" #&& export ftp_proxy=$proxy 
+export proxy="http://127.0.0.1:1080" && export http_proxy=$proxy && export https_proxy=$proxy && export no_proxy="localhost, 127.0.0.1, ::1" #&& export ftp_proxy=$proxy 
 ```
 
 ## 关闭代理
@@ -14,41 +14,6 @@ unset http_proxy && unset https_proxy && unset ftp_proxy && unset no_proxy && un
 
 ## 自动设置代理
 将命令添加到 ~/.bashrc 文件中
-
-# 打包文件/文件夹
-## tar
-
-tar命令可以用来压缩打包单文件、多个文件、单个目录、多个目录。
-
-### 单个文件压缩打包 
-
-```console
-tar czvf my.tar file1
-```
-
-### 多个文件压缩打包
-
-```console
-tar czvf my.tar file1 file2,...
-```
-
-### 单个目录压缩打包
-
-```console
-tar czvf my.tar dir1
-```
-
-### 多个目录压缩打包
-
-```console
-tar czvf my.tar dir1 dir2
-```
-
-### 解包至当前目录
-
-```console
-tar xzvf my.tar
-```
 
 # 仓库地址 设置为 中国仓库 (中科大仓库)
 
@@ -140,3 +105,47 @@ sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &
     ```console
     ssh 用户名@主机地址
     ```
+
+# 终端 Tabel键 自动补全时忽略大小写
+
+```console
+vi ~/.inputrc #创建或编辑 .inputrc 文件
+set completion-ignore-case on #添加一行命令
+:wq #保存并且退出
+exit #退出终端
+```
+
+# 打包文件/文件夹
+## tar
+
+tar命令可以用来压缩打包单文件、多个文件、单个目录、多个目录。
+
+### 单个文件压缩打包 
+
+```console
+tar czvf my.tar file1
+```
+
+### 多个文件压缩打包
+
+```console
+tar czvf my.tar file1 file2,...
+```
+
+### 单个目录压缩打包
+
+```console
+tar czvf my.tar dir1
+```
+
+### 多个目录压缩打包
+
+```console
+tar czvf my.tar dir1 dir2
+```
+
+### 解包至当前目录
+
+```console
+tar xzvf my.tar
+```
