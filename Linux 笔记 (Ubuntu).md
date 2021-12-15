@@ -3,7 +3,7 @@
 ## 开启代理
 
 ```console
-export proxy="http://127.0.0.1:1080" && export http_proxy=$proxy && export https_proxy=$proxy && export no_proxy="localhost, 127.0.0.1, ::1" #&& export ftp_proxy=$proxy 
+export proxy="http://127.0.0.1:1080" && export http_proxy=$proxy && export https_proxy=$proxy && export no_proxy="localhost, 127.0.0.1, ::1" #&& export ftp_proxy=$proxy
 ```
 
 ## 关闭代理
