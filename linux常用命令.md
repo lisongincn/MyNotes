@@ -15,7 +15,7 @@ unset http_proxy && unset https_proxy && unset ftp_proxy && unset no_proxy && un
 ## 自动设置代理
 将命令添加到 ~/.bashrc 文件中
 
-# 仓库地址 设置为 中国仓库 (中科大仓库)
+# 设置中国仓库 (中科大仓库)
 
 ```console
 sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list && apt update && apt upgrade
@@ -106,7 +106,7 @@ sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &
     ssh 用户名@主机地址
     ```
 
-# 终端 Tabel键 自动补全时忽略大小写
+# 设置 Tabel键 自动补全时忽略大小写
 
 ```console
 vi ~/.inputrc #创建或编辑 .inputrc 文件
