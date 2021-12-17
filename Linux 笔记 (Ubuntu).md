@@ -149,3 +149,18 @@ tar czvf my.tar dir1 dir2
 ```console
 tar xzvf my.tar
 ```
+
+# 更新 CA 证书
+
+- 在访问需要 HTTPS协议 的服务时会验证 CA证书，如果你的证书已经过期了，可能会无法访问。
+- 比如：
+  - wget https://xxxx.com/xxx/xxx.zip
+  - curl https://xxxx.com/xxx/xxx.zip
+  - git clone https://github.com/xxx/xxx/
+
+## 更新证书
+
+```console
+sudo apt-get install apt-transport-https ca-certificates -y
+sudo update-ca-certificates
+```
