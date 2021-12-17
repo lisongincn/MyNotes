@@ -190,39 +190,4 @@
 \<https://github.com/lisongincn/MyNotes\\>
 
 <lisongincn@gmail.com>  
-<https://github.com/lisongincn/MyNotes\>  
-
-
-| 写法  | 效果  |
-| :---: | :---: |
-| 段落  | 段落  |
-
-
-
-| 写法  | 效果  |
-| :---: | :---: |
-| 段落  | 段落  |
-
-
-
-| 写法  | 效果  |
-| :---: | :---: |
-| 段落  | 段落  |
-
-
-
-| 写法  | 效果  |
-| :---: | :---: |
-| 段落  | 段落  |
-
-
-
-| 写法  | 效果  |
-| :---: | :---: |
-| 段落  | 段落  |
-
-
-
-| 写法  | 效果  |
-| :---: | :---: |
-| 段落  | 段落  |
+<https://github.com/lisongincn/MyNotes\>
