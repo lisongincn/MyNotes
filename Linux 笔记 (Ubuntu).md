@@ -105,7 +105,7 @@ sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &
     2. 将文件中的这几个 配置值 修改成这个
 
         ```config
-        PermitRootLogin yes
+        PasswordAuthentication yes
         UsePAM no
         ```
 
