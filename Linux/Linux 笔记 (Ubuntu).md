@@ -18,6 +18,7 @@
       - [解包至当前目录](#解包至当前目录)
 - [更新 CA 证书](#更新-ca-证书)
   - [更新证书](#更新证书)
+  - [开放所有端口](#开放所有端口)
 
 
 # 设置系统代理
@@ -233,4 +234,15 @@ tar xzvf my.tar
 ```console
 sudo apt-get install apt-transport-https ca-certificates -y
 sudo update-ca-certificates
+```
+
+## 开放所有端口
+
+```console
+sudo iptables -P INPUT ACCEPT
+sudo iptables -P FORWARD ACCEPT
+sudo iptables -P OUTPUT ACCEPT
+sudo iptables -F
+sudo apt-get purge netfilter-persistent
+reboot
 ```
