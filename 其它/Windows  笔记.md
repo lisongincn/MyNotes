@@ -29,3 +29,26 @@ fsutil.exe file setCaseSensitiveInfo <path> enable #<path> 替换为路径
 #关闭
 fsutil.exe file setCaseSensitiveInfo <path> disable #<path> 替换为路径
 ```
+
+## WSL 设置中文
+WSL 尽管已经设置了中文语言但是许多软件依然不能显示为中文，那是因为 WSL 中没有中文字体，需要安装中文字体才能正常显示中文。
+
+> 把 Windows 中的字体复制到 Linux 中，这样比较快，不然安装字体需要下载，有些慢。
+
+# 复制字体文件
+
+```console
+sudo ln -s /mnt/c/Windows/Fonts /usr/share/fonts/font
+```
+
+# 安装字体管理软件
+
+```console
+sudo apt install fontconfig
+```
+
+# 刷新字体
+
+```console
+sodu fc-cache -fv
+```
