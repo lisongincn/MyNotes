@@ -47,34 +47,19 @@ sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list &
 
 # 设置中文
 
-1. 安装语言管理程序
+1. 安装语言
 
     ```console
-    apt-get install locales
+    sudo apt-get update && sudo apt-get upgrade
+    sudo apt install language-pack-zh-hans-base language-pack-zh-hans
+    sudo update-locale LANG=zh_CN.UTF-8 LANGUAGE="zh_CN:zh"
+    source /etc/default/locale
     ```
 
-2. 启动语言管理程序
+5. 重新登陆
 
     ```console
-    dpkg-reconfigure locales
-    ```
-
-3. 更新全部软件
-
-    ```console
-    apt-get update && apt-get upgrade && apt-get dist-upgrade
-    ```
-
-4. 删除已经下载的包
-
-    ```console
-    apt-get clean
-    ```
-
-5. 重启系统
-
-    ```console
-    reboot
+    logout
     ```
 
 # 允许使用密码登录
